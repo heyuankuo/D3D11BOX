@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="聚合支持">
+      <UniqueIdentifier>{56787a72-d4b4-4ddd-b3f6-2cd138bf49fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="类厂">
+      <UniqueIdentifier>{a4b9ed12-c3bc-4e3f-a36b-c1aff21ae751}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="模块定义&amp;接口定义">
+      <UniqueIdentifier>{e8304a66-9a77-4739-a030-c0ad4bd163fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="注册">
+      <UniqueIdentifier>{e34c648b-6eaf-45be-b324-defa064e0676}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{1a98389b-7db9-4d5d-8073-8f45cd7653d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="生成的文件">
+      <UniqueIdentifier>{28b80984-0cd9-4b34-871a-28980550fcc5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="REGISTRY.CPP">
+      <Filter>注册</Filter>
+    </ClCompile>
+    <ClCompile Include="SERVER.CPP">
+      <Filter>注册</Filter>
+    </ClCompile>
+    <ClCompile Include="CFACTORY.CPP">
+      <Filter>类厂</Filter>
+    </ClCompile>
+    <ClCompile Include="CUNKNOWN.CPP">
+      <Filter>聚合支持</Filter>
+    </ClCompile>
+    <ClCompile Include="hykd3d11graphic_c.c">
+      <Filter>生成的文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HYKBox.CPP">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="REGISTRY.H">
+      <Filter>注册</Filter>
+    </ClInclude>
+    <ClInclude Include="CFACTORY.H">
+      <Filter>类厂</Filter>
+    </ClInclude>
+    <ClInclude Include="CUNKNOWN.H">
+      <Filter>聚合支持</Filter>
+    </ClInclude>
+    <ClInclude Include="hykd3d11graphic_h.h">
+      <Filter>生成的文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HYKBox.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMPNT.DEF">
+      <Filter>模块定义&amp;接口定义</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="CMPNT.idl">
+      <Filter>模块定义&amp;接口定义</Filter>
+    </Midl>
+  </ItemGroup>
+</Project>

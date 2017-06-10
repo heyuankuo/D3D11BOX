@@ -1,0 +1,48 @@
+import "oaidl.idl";
+import "ocidl.idl";
+
+import "unknwn.idl" ;
+
+// Interface ID3D11Box
+[
+	object,
+	uuid(7D8BEEEF-B08B-4C63-8ED6-A3C8BA7D35EC),
+	helpstring("ID3D11Box Interface"),
+	pointer_default(unique)
+]
+interface ID3D11Box : IUnknown
+{
+	HRESULT DrawBox() ;
+} ;
+
+// Structure for interface IZ
+typedef struct 
+{
+	double x ;
+	double y ;
+	double z ;
+} Point3d ;
+
+//
+// Component descriptions
+//
+[
+	uuid(AA927861-0E89-4F49-8507-C98BF5E56161),
+	version(1.0),
+	helpstring("HYK D3D11 Library")
+]
+library ServerLib
+{
+	importlib("stdole32.tlb") ;
+
+	[
+		uuid(424E0B71-F131-4B87-8416-35F7AA85B67C),
+		helpstring("HYK Graphic Class")
+	]
+	coclass IHYKD3D11Graphic
+	{
+		[default] interface ID3D11Box ;
+	} ;
+} ;
+
+  

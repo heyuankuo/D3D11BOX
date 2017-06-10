@@ -1,0 +1,7 @@
+LIBRARY         D3D11BOX.dll
+
+EXPORTS
+                DllGetClassObject   	PRIVATE
+                DllCanUnloadNow			PRIVATE
+                DllRegisterServer   	PRIVATE
+                DllUnregisterServer 	PRIVATE
